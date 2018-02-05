@@ -15,8 +15,8 @@ public class JmsTest {
     public void producerTest(){
 
         ClassPathXmlApplicationContext springContext = new ClassPathXmlApplicationContext(new String[]{"classpath:spring-core.xml"});
-        ProducerService producerService = (ProducerService)springContext.getBean("producerService");
-        CustomerService customerService = (CustomerService)springContext.getBean("customerService");
+        ProducerService producerService = (ProducerService)springContext.getBean("producerServiceImpl");
+        CustomerService customerService = (CustomerService)springContext.getBean("customerServiceImpl");
 
         Destination destination = (Destination)springContext.getBean("queueDestination");
         producerService.sendMessage("测试消息队列");
