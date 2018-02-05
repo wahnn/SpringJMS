@@ -7,7 +7,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import javax.jms.Destination;
 
-
+/**
+ * 消息队列测试类
+ */
 public class JmsTest {
 
 
