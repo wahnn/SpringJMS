@@ -15,7 +15,7 @@ public class CustomerServiceImpl implements CustomerService {
     @Resource
     private JmsTemplate jmsTemplate;
     /**
-     * 接受消息
+     * 接收消息
      * @param destination
      */
     public void receive(Destination destination) {

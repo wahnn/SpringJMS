@@ -7,7 +7,7 @@ import javax.jms.Destination;
  */
 public interface CustomerService {
     /**
-     * 接受消息
+     * 接收消息
      */
     void receive(Destination destination);
 
